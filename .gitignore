@@ -1,0 +1,15 @@
+.vscode
+
+# Test binary, build with `go test -c`
+*.test
+
+### Snapcraft ###
+
+prime/
+parts/
+stage/
+vendor/*
+snap/.snapcraft/
+
+*.snap
+*.tar.bz2

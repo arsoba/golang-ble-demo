@@ -1,0 +1,24 @@
+name: arsoba-golang-ble
+version: '0.1'
+summary: Golang BLE Thingy Demo
+description: |
+  Golang BLE Thingy Demo
+
+architectures:
+  - armhf
+
+confinement: strict
+grade: stable
+
+parts:
+  ble:
+    source: .
+    plugin: go
+    go-importpath: ble
+
+apps:
+  ble:
+    command: ble
+    daemon: simple
+    restart-condition: always
+    plugs: &plugs [network,  bluetooth-control]

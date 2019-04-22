@@ -1,0 +1,5 @@
+ble-hci-device-num=1
+ble-device-mac=CF:AA:13:A1:5C:A5
+mqtt-host=broker.hivemq.com
+mqtt-port=1883
+mqtt-topic=/gateway/{hostname}/sensors
